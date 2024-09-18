@@ -1,0 +1,41 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Rajdhani:wght@300&display=swap');
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Rajdhani', sans-serif; */
+*{
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+.row{
+  padding: 1rem .5rem;
+}
+.tableheadCell{
+  font-weight: bold !important;
+  color: white !important;
+}
+.col-md-4 , .col-md-5 , .col-md-6{
+  margin-bottom: .8rem;
+}
+
+@media print {
+ 
+  .col-md-4 , .col-md-5 , .col-md-6{
+width: 50%;
+ }
+  body {
+    margin: 0; /* Optional: to remove body margins */
+  }
+}
+
+
+@media screen and (min-width : 500px) and (max-width:767px) {
+  .col-md-5{
+    width: 50%;
+    white-space: nowrap;
+  }
+}
