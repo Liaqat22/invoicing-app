@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Rajdhani:wght@300&display=swap');
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Rajdhani', sans-serif; */
+*{
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+.row{
+  padding: 1rem .5rem;
+}
+.tableheadCell{
+  font-weight: bold !important;
+  color: white !important;
+}
+.col-md-4 , .col-md-5 , .col-md-6{
+  margin-bottom: .8rem;
+}
+.no-data{
+  border: .1rem solid;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 1.5rem;
+  border-radius: 4rem;
+}
+
+@media print {
+ 
+  .col-md-4 , .col-md-5 , .col-md-6{
+width: 50%;
+ }
+  body {
+    margin: 0; /* Optional: to remove body margins */
+  }
+}
+
+
+@media screen and (min-width : 300px) and (max-width:499px) {
+  .paymentTotal-table , .invoiceheadRow{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (min-width : 500px) and (max-width:767px) {
+  .col-md-5{
+    width: 50%;
+    white-space: nowrap;
+  }
+ 
+}
