@@ -55,9 +55,9 @@ function InvoiceList() {
                                 <TableCell>{p?.date}</TableCell>
                                 <TableCell>
                                     <NavLink to={`/invoicetable/${i}`}>
-                                    <Button variant="contained" color='info'>view Details</Button>
+                                    <Button variant="contained" color='info' className='m-1'>view Details</Button>
                                     </NavLink>
-                                    <Button variant="contained" color='error' className='mx-1' onClick={()=> {handleRemove(i)}}>Remove</Button>
+                                    <Button variant="contained" color='error' className='m-1' onClick={()=> {handleRemove(i)}}>Remove</Button>
                                     </TableCell>
 
                             </TableRow>
