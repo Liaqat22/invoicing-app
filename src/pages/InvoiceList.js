@@ -22,10 +22,10 @@ function InvoiceList() {
                 <div className='row d-flex justify-content-center'>
                     <div className='col-md-10'>
                         <div className='mb-3' style={{ textAlign: "end" }}>
-                            <NavLink to="/form" className="mx-2"><Button color='info' variant="contained">Add new invoice</Button></NavLink>
+                            <NavLink to="/form" className="m-1"><Button color='info' variant="contained">Add new invoice</Button></NavLink>
                             {profile !== null ?
-                                <NavLink to="/profile"><Button color='success' variant="contained">Profile</Button></NavLink> :
-                                <NavLink to="/profileform"><Button color='secondary' variant="contained">Profile required</Button></NavLink>
+                                <NavLink to="/profile" className="m-1" ><Button color='success' variant="contained">Profile</Button></NavLink> :
+                                <NavLink to="/profileform" className="m-1" ><Button color='secondary' variant="contained">Profile required</Button></NavLink>
                             }
                         </div>
 
